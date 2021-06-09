@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>这里是网站标题</title>
+    <meta name="description" content="这里是网站介绍">
+    <meta name="keywords" content="这里是网站关键词"> -->
+    <title>铑铯铍MC</title>
+    <meta name="description" content="一个随时都会崩溃的小服务器">
+    <meta name="keywords" content="我的世界,MC,MineCraft">
+    <link rel="icon" href="./images/Logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/viewer.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="load">
+        <p>加载中...</p>
+        <div class="loadLove">
+            <div class="loadLeft"></div>
+            <div class="loadRight"></div>
+        </div>
+    </div>
+
+    <div class="Box">
+        <!-- ALL -->
+        <div id="Indexbox">
+
+            <!-- 顶部菜单 -->
+            <div class="menu" id="menu">
+                <img src="./images/Logo.svg" alt="favicon">
+                <p>魔法金属生存 | LaoSePi Server</p>
+            </div>
+			
+			<div class="leftBar">
+			    <div class="leftBar-ButtomPages" id="menuPages" onclick="PagesClick(true)"></div>
+			</div>
+			
+			<div class="leftBar-Pages" id="leftBar-Pages">
+			    <div class="leftBar-ButtomClose" onclick="PagesClick(false)">
+			        <div class="div1"></div>
+			        <div class="div2"></div>
+			    </div>
+			    <div class="leftBar-Pages-box">
+			        <h1>页面</h1>
+			        <div class="leftBar-Pages-optine" id="leftBar-Pages-optine1"
+			            onclick="pages_title_option_click(1 ,false);PagesClick(false)">
+			            <img src="./images/menu_1.gif" alt="About">
+			            <p>关于本服</p>
+			        </div>
+			        <div class="leftBar-Pages-optine" id="leftBar-Pages-optine2"
+			            onclick="pages_title_option_click(2, false);PagesClick(false)">
+			            <img src="./images/runGif.gif" alt="Players">
+			            <p>一群沙雕玩家</p>
+			        </div>
+			        <div class="leftBar-Pages-optine" id="leftBar-Pages-optine3"
+			            onclick="pages_title_option_click(3 ,false);PagesClick(false)">
+			            <img src="./images/ironman.webp" alt="Rules">
+			            <p>服务器规则</p>
+			        </div>
+			        <div class="leftBar-Pages-optine" id="leftBar-Pages-optine4"
+			            onclick="pages_title_option_click(4 ,false);PagesClick(false)">
+			            <img src="./images/creeper-face.webp" alt="Q&A">
+			            <p>Q&A</p>
+			        </div>
+			        <div class="leftBar-Pages-optine" id="leftBar-Pages-optine5"
+			            onclick="pages_title_option_click(5 ,false);PagesClick(false)">
+			            <img src="./images/runGif.gif" alt="ServerDaily">
+			            <p>服务器近况</p>
+			        </div>
+			    </div>
+			</div>
+
+            <!-- 页面版块1 -->
+            <div class="pages" id="pages">
+
+                <!-- 页面选项卡 -->
+                <div class="pages-title">
+                    <div class="pages-title-option pages-title-option-click" id="pages-title-option1"
+                        onclick="pages_title_option_click(1, true)">
+                        <img src="./images/menu_1.gif" alt="About">
+                        <p>关于本服</p>
+                    </div>
+                    <div class="pages-title-option" id="pages-title-option2"
+                        onclick="pages_title_option_click(2, true)">
+                        <img src="./images/runGif.gif" alt="Player">
+                        <p>一群沙雕玩家</p>
+                    </div>
+                    <div class="pages-title-option" id="pages-title-option3"
+                        onclick="pages_title_option_click(3, true)">
+                        <img src="./images/ironman.webp" alt="Rules">
+                        <p>服务器规则</p>
+                    </div>
+                    <div class="pages-title-option" id="pages-title-option4"
+                        onclick="pages_title_option_click(4, true)">
+                        <img src="./images/creeper-face.webp" alt="Q&A">
+                        <p>Q&A</p>
+                    </div>
+					<div class="pages-title-option" id="pages-title-option5"
+					    onclick="pages_title_option_click(5, true)" style="display: none;">
+					    <img src="./images/runGif.gif" alt="ServerDaily">
+					    <p>服务器近况</p>
+					</div>
+                </div>
+
+                <!-- 页面 -->
+                <div class="pages-text pages-text-show" id="pages-text1">
+                    <div class="pages-text-box" id="meMD">
+                        <h1>关于本服</h1>
+                        <p>本服由 <strong>服务器赞助者·肾雄肝帝·教授·LIBMO</strong> 捐助，使用腾讯云轻量应用服务器；</p>
+						<p>服务器规格如下：</p>
+						<p>
+							<table style="border-collapse:collapse;border-color:#ccc;border-spacing:0" class="tg"><thead><tr><th style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">CPU</th><th style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">AMD EPYC 7K62 2物理核心 2逻辑核心</th></tr></thead><tbody><tr><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">内存</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">DDR3 1600MHz 4096MB</td></tr><tr><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">硬盘</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">80G</td></tr><tr><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">带宽　</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">2M</td></tr><tr><td style="background-color:#3a3f49;border-color:#efefef;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">系统</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">CentOS 7 + 宝塔面板</td></tr><tr><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">部署地址</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">广东广州</td></tr></tbody></table>
+						</p>
+                        <div class="pages-text-box-img">
+                            <img src="./images/Server_1.png" alt="服务器截图" class="n0ts-img">
+                            <h6>服务器截图</h6>
+                        </div>
+                        <p>
+							本服的一大特色就是滚服速度快，因为教授肝功能非常好，一个档玩不了多久就基本没什么可肝的了。
+							上一个1.12.2 工业2+暮色森林的档玩的挺久，大概玩了两个月左右。然后中途第二个档1.16.5机械动力，因为只加了机械动力一个mod
+							就没什么怪可打，就只搞生产线提不起劲儿。于是又换了这次的1.7.10魔法金属。
+						</p>
+						<p>
+							所幸，这次魔法金属肝度挺高，也挺耐玩，应该能玩挺久的。
+						</p>
+                    </div>
+                </div>
+                <div class="pages-text" id="pages-text2">
+                    <div class="pages-text-box">
+                        <h1>本服玩家名单</h1>
+						<del>由于这次魔法金属是一个RPG模组，所以将玩家名单做成职业等级排行的形式。</del>
+						<p>
+							<table style="border-collapse:collapse;border-color:#ccc;border-spacing:0" class="tg"><thead><tr><th style="background-color:#3a3f49;border-color:#ccc;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">排名</th><th style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">ID</th><th style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">等级</th><th style="background-color:#3a3f49;border-color:#ccc;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">所属权限组</th></tr></thead><tbody><tr><td style="background-color:#3a3f49;border-color:#ccc;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">1</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">LIBMO</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">28</td><td style="background-color:#3a3f49;border-color:#ccc;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">OP</td></tr><tr><td style="background-color:#3a3f49;border-color:#ccc;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">2</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Wtt</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">23</td><td style="background-color:#3a3f49;border-color:#ccc;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">OP</td></tr><tr><td style="background-color:#3a3f49;border-color:#ccc;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">3</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Lord</td><td style="background-color:#3a3f49;border-color:#c0c0c0;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">22</td><td style="background-color:#3a3f49;border-color:#ccc;border-style:solid;border-width:1px;color:#c0c0c0;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">OP</td></tr></tbody></table>
+						</p>
+                    </div>
+                </div>
+                <div class="pages-text" id="pages-text3">
+                    <div class="pages-text-box">
+                        <h1>服务器规则</h1>
+						<p>嘛，说是规则其实更多的是一些提示。</p>
+						<li>第一、本服的语音频道欢迎大家使用，但在语音时请<strong>文明发言</strong>，禁止人身攻击！</li>
+						<li>
+							第二、本服不设置特殊权限用户组，默认用户组拥有以下权限:<br />
+							/tp /sethome /home /delhome /setwarp /warp /delwarp /heal /jump
+						</li>
+						<li></li>
+                    </div>
+                </div>
+                <div class="pages-text" id="pages-text4">
+                    <div class="pages-text-box">
+                        <h1>Q&A</h1>
+						待补充...
+                    </div>
+                </div>
+				<div class="pages-text" id="pages-text5">
+				    <div class="pages-text-box">
+						<h1>开服</h1>
+						<p>这次的魔法金属存档于2021年6月3日开启。</p>
+						<p>按照往常的惯例，一般一个档在 <strong>服务器赞助者·肾雄肝帝·教授</strong> 手里活不过一个月，但是这次的MOD比较肝，应该能多玩一些日子。</p>
+						<p>
+							目前服务器属于开荒阶段，客户端整合包下载地址：<br>
+							<button type="button">点击下载</button>
+						</p>
+					</div>
+				</div>
+            </div>
+
+            <!-- 页面版块2 -->
+            <div class="pages pages2" id="pages2">
+
+                <!-- 页面选项卡 -->
+                <div class="pages-title pages-title2">
+                    <div class="pages-title-option pages-title-option-click">
+                        <img src="./images/runGif.gif" alt="ServerDaily">
+                        <p>服务器近况</p>
+                    </div>
+                </div>
+
+                <!-- 页面 -->
+                <div class="pages-text pages-text-show">
+                    <div class="pages-text-box pages-text-box2">
+                        <h1>开服</h1>
+						<p>这次的魔法金属存档于2021年6月3日开启。</p>
+						<p>按照往常的惯例，一般一个档在 <strong>服务器赞助者·肾雄肝帝·教授</strong> 手里活不过一个月，但是这次的MOD比较肝，应该能多玩一些日子。</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 底部版权 -->
+            <div class="footer" id="footer">
+                <p class="left">&copy; 2021 Laosepi</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/viewer.min.js"></script>
+    <script src="./js/N0ts.js"></script>
+</body>
+
+</html>
